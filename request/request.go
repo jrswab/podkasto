@@ -10,7 +10,7 @@ import (
 )
 
 func Send(searchQuery, apiKey, apiSecret string) ([]byte, error) {
-	url := fmt.Sprintf("https://api.podcastindex.org/api/1.0/search/%s", searchQuery)
+	url := fmt.Sprintf("https://api.podcastindex.org/api/1.0/%s", searchQuery)
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		return nil, err
