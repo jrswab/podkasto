@@ -1,10 +1,4 @@
-package search
-
-// API contains the API Key and Secret for sending requests to PodcastIndex.org
-type API struct {
-	ApiKey    string
-	ApiSecret string
-}
+package main
 
 // Response contains the unmarshaled data from a successful query to PodcastIndex.org
 type Search struct {
@@ -15,7 +9,7 @@ type Search struct {
 	Count       int    `json:"count"`
 }
 
-type Podcasts struct {
+type Podcast struct {
 	Status      string `json:"status"`
 	Query       Query  `json:"query"`
 	Feed        Feed   `json:"feed"`

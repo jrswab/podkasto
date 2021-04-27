@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 
-	"github.com/jrswab/podkasto/config"
-	"github.com/jrswab/podkasto/search"
+	"github.com/jrswab/podkasto-api/search"
+	"github.com/jrswab/podkasto-cli/config"
 )
 
 func main() {
